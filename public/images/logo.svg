@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1C57D" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#BFA15F" />
+      <stop offset="100%" stop-color="#8B6914" />
+    </linearGradient>
+
+    <!-- Navy Blue Gradient -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#144C80" />
+      <stop offset="100%" stop-color="#0B3C68" />
+    </linearGradient>
+
+    <!-- Paths for Circular Text -->
+    <path id="top-arc" d="M 45 250 A 205 205 0 0 1 455 250" />
+    <path id="bottom-arc" d="M 45 250 A 205 205 0 0 0 455 250" />
+  </defs>
+
+  <!-- Outer Rings -->
+  <circle cx="250" cy="250" r="245" fill="url(#goldGradient)" />
+  <circle cx="250" cy="250" r="238" fill="#FFFFFF" />
+  
+  <!-- Main Blue Ring for Text -->
+  <circle cx="250" cy="250" r="230" fill="url(#blueGradient)" />
+  
+  <!-- Inner Metallic Divider -->
+  <circle cx="250" cy="250" r="180" fill="url(#goldGradient)" />
+  <circle cx="250" cy="250" r="172" fill="#FFFFFF" />
+
+  <!-- Segmented Gear Ring -->
+  <circle cx="250" cy="250" r="145" fill="url(#goldGradient)" />
+  <circle cx="250" cy="250" r="145" fill="none" stroke="url(#blueGradient)" stroke-width="30" stroke-dasharray="56.9 56.9" transform="rotate(11.25 250 250)" />
+  <circle cx="250" cy="250" r="125" fill="#FFFFFF" />
+
+  <!-- Center Shield Base -->
+  <path d="M 250 140 L 320 160 L 320 270 Q 250 330 250 360 Q 250 330 180 270 L 180 160 Z" fill="#FFFFFF" stroke="url(#goldGradient)" stroke-width="6"/>
+  <!-- Split Shield Colors -->
+  <path d="M 250 140 L 250 360 Q 250 330 180 270 L 180 160 Z" fill="url(#blueGradient)" />
+  <path d="M 250 140 L 320 160 L 320 270 Q 250 330 250 360 Z" fill="url(#goldGradient)" />
+
+  <!-- Center Monogram 'RL' -->
+  <g transform="translate(195, 290)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="100" font-weight="900" fill="url(#blueGradient)">R</text>
+  </g>
+  <g transform="translate(245, 290)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="100" font-weight="900" fill="url(#goldGradient)">L</text>
+  </g>
+
+  <!-- Checkmark Overlay -->
+  <path d="M 220 250 L 260 300 L 340 170" fill="none" stroke="url(#blueGradient)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 220 250 L 260 300 L 340 170" fill="none" stroke="url(#goldGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Top Circular Text -->
+  <text font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#FFFFFF" letter-spacing="1">
+    <textPath href="#top-arc" startOffset="50%" text-anchor="middle">MULTISERVICIOS DE CALIDAD RL</textPath>
+  </text>
+
+  <!-- Bottom Circular Text -->
+  <text font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#goldGradient)" letter-spacing="2">
+    <textPath href="#bottom-arc" startOffset="50%" text-anchor="middle">RL - QUALITY MULTISERVICES</textPath>
+  </text>
+
+  <!-- Text Divider Dots -->
+  <circle cx="50" cy="250" r="6" fill="url(#goldGradient)" />
+  <circle cx="450" cy="250" r="6" fill="url(#goldGradient)" />
+
+  <!-- 8 Icon Placeholders on Gear Ring -->
+  <g fill="#FFFFFF" stroke="url(#blueGradient)" stroke-width="2">
+    <circle cx="250" cy="105" r="14" /> <!-- Top -->
+    <circle cx="250" cy="395" r="14" /> <!-- Bottom -->
+    <circle cx="105" cy="250" r="14" /> <!-- Left -->
+    <circle cx="395" cy="250" r="14" /> <!-- Right -->
+    <circle cx="147" cy="147" r="14" /> <!-- Top-Left -->
+    <circle cx="353" cy="147" r="14" /> <!-- Top-Right -->
+    <circle cx="147" cy="353" r="14" /> <!-- Bottom-Left -->
+    <circle cx="353" cy="353" r="14" /> <!-- Bottom-Right -->
+  </g>
+</svg>

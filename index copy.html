@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-proyecto-w2</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/canvaLogoAcrobat.svg">
+  </head>
+
+  <body class="bg-fondo-oscuro text-texto-principal">
+    <header class="flex  flex-row justify-around items-center">
+      <img src="./images/logo.svg" alt="Logo" class="w-18.75"/>
+      <nav>
+        <ul class="flex gap-8">
+          <li><a class="uppercase" href="">About me</a></li>
+          <li><a class="uppercase" href="">Skills</a></li>
+          <li><a class="uppercase" href="">Projects</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="uppercase">Contact <span class="bg-amarillo-destacado rounded-full text-black">&#10138;</span> </button>
+    </header>
+    <!-- Seccion para el hero y portada -->
+    <div>go to top fixed arrow</div>
+    <main>
+      <section id="hero" class="bg-grad-sec flex flex-col items-center justify-center text-center pt-20">
+        <h1 class="text-4xl md:text-6xl font-bold">I'm <span class="text-amarillo-destacado">Rafael Lopez</span></h1>
+        <h2 class="text-4xl md:text-6xl text-gray-300 mt-2">Frontend Developer</h2>
+        <div class="relative w-full max-w-lg mt-8">
+          <img src="./images/me-4-bg.png" alt="My picture-Hero img" class="w-full h-auto object-contain mx-auto" />
+        </div>
+        <button type="button" class="bg-amarillo-destacado text-black px-8 py-3 rounded-full font-bold uppercase tracking-wider transition-all hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg shadow-amarillo-destacado/30">My Projects</button>
+      </section>
+
+      <section>Card client review</section>
+      <section>Expertise Graph</section>
+
+      <section id="about">
+        <h2 class="uppercase">Who Am I?</h2>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+
+        <button type="button" class="uppercase">Show My Projects</button>
+      </section>
+      <section id="skills">
+        <h2 class="uppercase">My Skills</h2>
+        <div class="skills-grid"></div>
+
+        <div >contenedor Additional Skills</div>
+      </section>
+
+        <section id="projects" class="uppercase">The works Closest to My Heart
+          <!-- tarjetas de proyectos -->
+        </section>
+        <button class="uppercase" type="button">Show my projects</button>
+      
+      
+      <section id="contact">
+        <h2 class="uppercase">Let's Have a Chat</h2>
+        <form action=""></form>
+      </section>
+    </main>
+    <footer>&copy;2026 - Rafael Lopez - Hecho con Tailwind v4</footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  /* ------------------------------------------------------------------------ */
+  /* VALORES POR DEFECTO: LIGHT MODE                                          */
+  /* ------------------------------------------------------------------------ */
+  
+  /* Colores del proyecto en Claro */
+  --color-fondo-oscuro: #f8fafc;           /* Fondo principal blanco/grisáceo muy limpio */
+  --color-texto-principal: #0f172a;        /* Texto oscuro (Slate 900) para alta legibilidad */
+  --color-amarillo-destacado: #4f46e5;     /* Un tono índigo/azul que destaca excelente en fondos claros */
+  --color-verde-neon: #10b981;             /* Verde esmeralda para contrastar en modo claro */
+  --color-azul-oscuro: #e2e8f0;            /* Gris claro (Slate 200) ideal para tarjetas/secciones */
+  --color-gris-suave: #475569;             /* Texto secundario gris oscuro */
+
+  /* Imágenes de fondo con gradiente en Claro */
+  --background-image-grad-main: linear-gradient(0deg, #cbd5e1 0%, #f8fafc 100%);
+  --background-image-grad-sec: radial-gradient(
+    circle at 50% 45%, 
+    rgba(79, 70, 229, 0.15) 0%, 
+    #e2e8f0 60%, 
+    #f1f5f9 100%
+  );
+  
+  /* Sombra adaptada para modo claro */
+  --drop-shadow-yellowb: drop-shadow(0 10px 20px rgba(15, 23, 42, 0.05));
+}
+
+/* Variante personalizada para Dark Mode (Sintaxis Tailwind v4) */
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant hover (&:hover);
+
+/* -------------------------------------------------------------------------- */
+/* SOBREESCRITURA PARA DARK MODE                                              */
+/* -------------------------------------------------------------------------- */
+@layer base {
+  .dark {
+    /* Retornamos a tus colores originales oscuros */
+    --color-fondo-oscuro: #0a0f22;
+    --color-texto-principal: #ffffff;
+    --color-amarillo-destacado: #e3ff6a;
+    --color-verde-neon: #a4ff7a;
+    --color-azul-oscuro: #1e293b;
+    --color-gris-suave: #8892b0;
+
+    /* Gradientes oscuros originales */
+    --background-image-grad-main: linear-gradient(0deg, #25458e 0%, #0a0f22 100%);
+    --background-image-grad-sec: radial-gradient(
+      circle at 50% 45%, 
+      rgba(227, 255, 106, 0.5) 0%, 
+      #1e293b 40%, 
+      #0d1117 100%
+    );
+    
+    /* Tu sombra neón original */
+    --drop-shadow-yellowb: drop-shadow(0 0 25px rgba(227, 255, 106, 0.4));
+  }
+}
