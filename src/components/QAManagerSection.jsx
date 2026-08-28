@@ -1,33 +1,12 @@
 import React, { useState } from 'react';
 import { QA_AUTOMATION_CASE_STUDIES } from '../data/portfolioData';
-import { ShieldCheck, Clock, Cpu, Users, Layers, Terminal, CheckCircle2, AlertTriangle, Play, ChevronRight } from 'lucide-react';
+import { ShieldCheck, Clock, Cpu, CheckCircle2, ChevronRight } from 'lucide-react';
 
 export default function QAManagerSection() {
   const [activeStep, setActiveStep] = useState(0);
 
   const scriptEngine = QA_AUTOMATION_CASE_STUDIES[0];
   const framework = QA_AUTOMATION_CASE_STUDIES[1];
-
-  const sampleScriptSnippet = `// Google Apps Script - BPO Interaction Review & Data Verification Engine
-function auditInteractionData(recordId, agentInput, docRules) {
-  const payload = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("AuditLogs");
-  
-  // 1. Check SLA & SOW Documentation Thresholds
-  let errorsFound = [];
-  if (!agentInput.hasRequiredSOWDoc) {
-    errorsFound.push("Missing SOW Edge-Case Compliance Doc");
-  }
-  
-  // 2. Calculate Automated Scoring Matrix
-  const netScore = calculateStandardizedScore(agentInput.metrics);
-  
-  // 3. Dispatch Automated Telegram / Workspace Alert on Flagged KPI Dips
-  if (netScore < 85 || errorsFound.length > 0) {
-    sendTelegramAuditAlert(recordId, agentInput.agentName, netScore, errorsFound);
-  }
-  
-  return { status: "CERTIFIED", score: netScore, handlingTimeSaved: "25 mins" };
-}`;
 
   return (
     <section id="qa-automation" className="py-16 md:py-24">
@@ -88,26 +67,81 @@ function auditInteractionData(recordId, agentInput, docRules) {
               </div>
             </div>
 
-            {/* Code Snippet Viewer */}
+            {/* Automation System Architecture & Workflow Pipeline Visual */}
             <div className="lg:col-span-6">
-              <div className="rounded-2xl bg-slate-950 border border-slate-800 shadow-2xl overflow-hidden font-mono text-xs">
-                <div className="px-4 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between">
+              <div className="p-6 rounded-2xl bg-slate-950/90 border border-slate-800 shadow-2xl space-y-4">
+                <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                   <div className="flex items-center gap-2">
-                    <Terminal className="w-4 h-4 text-amber-400" />
-                    <span className="text-slate-300 text-[11px] font-bold">AutomationEngine.js (Google Apps Script)</span>
+                    <Cpu className="w-4 h-4 text-amber-400" />
+                    <span className="text-white text-xs font-bold uppercase tracking-wider">
+                      Automated Workflow Pipeline Architecture
+                    </span>
                   </div>
-                  <span className="text-[10px] px-2 py-0.5 rounded bg-amber-400/20 text-amber-300">
-                    JavaScript Automation
+                  <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30">
+                    Live System Active
                   </span>
                 </div>
 
-                <div className="p-4 overflow-x-auto text-slate-300 leading-relaxed text-[11px]">
-                  <pre className="text-amber-200/90">{sampleScriptSnippet}</pre>
+                {/* Workflow Architecture Steps */}
+                <div className="space-y-3 pt-1">
+                  
+                  {/* Step 1 */}
+                  <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xs">
+                        01
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-white">Data Ingestion & SOW Validation</h4>
+                        <p className="text-[11px] text-slate-400">Raw interaction logs & QA scorecards ingested</p>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-slate-400 bg-slate-800 px-2 py-1 rounded">Auto-Trigger</span>
+                  </div>
+
+                  {/* Flow Arrow */}
+                  <div className="flex justify-center text-amber-400/60 -my-1">
+                    <ChevronRight className="w-4 h-4 rotate-90" />
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                        02
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-white">JS & Apps Script Audit Logic</h4>
+                        <p className="text-[11px] text-slate-400">Scoring matrix checks & anomaly detection</p>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-amber-300 bg-amber-500/20 px-2 py-1 rounded font-bold">35 Min Target</span>
+                  </div>
+
+                  {/* Flow Arrow */}
+                  <div className="flex justify-center text-amber-400/60 -my-1">
+                    <ChevronRight className="w-4 h-4 rotate-90" />
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">
+                        03
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-white">Looker Studio & Stakeholder Alerts</h4>
+                        <p className="text-[11px] text-slate-400">Real-time KPI sync & instant Telegram dispatch</p>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-mono text-emerald-300 bg-emerald-500/20 px-2 py-1 rounded font-bold">100% SLA</span>
+                  </div>
+
                 </div>
 
-                <div className="px-4 py-2 bg-slate-900/80 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
- {/*                  <span>Target: Interactive Contact Center</span> */}
-                  <span className="text-emerald-400 font-bold">Status: Deployed & Active</span>
+                <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800/80">
+                  <span>Google Suite & JavaScript Integration</span>
+                  <span className="text-amber-400 font-semibold">+41% Speed Boost</span>
                 </div>
               </div>
             </div>
