@@ -14,24 +14,24 @@ export default function Hero({ activeRole, setActiveRole, openResumeModal }) {
         };
       case 'data':
         return {
-          badge: "Google Certified Data Analyst & KPI Specialist",
+          badge: "Data Analyst & KPI Specialist",
           title: "Translating Complex BPO Operations into Business Intelligence",
-          description: "Proficient in SQL, Looker Studio, Python, and Google Suite Automation. Expert at auditing client interaction datasets, eliminating anomalies, and designing actionable executive dashboards.",
+          description: "Proficient in Looker Studio, and Google Suite Automation. Expert at auditing client interaction datasets, eliminating anomalies, and designing actionable executive dashboards.",
           tagline: "Proven Impact: Cut evaluation processing time from 60+ to 35 mins"
         };
       case 'qa':
         return {
           badge: "QA Operations Manager & Process Automation Leader",
           title: "Streamlining BPO Quality Workflows & Process Automation",
-          description: "Supervised 20-member QA teams across major contact centers. Built custom JavaScript & Google Apps Script engines saving hundreds of operational hours and boosting CSAT by +10-20%.",
+          description: "Supervised 20+ members in QA teams across major contact centers. Built custom JavaScript & Google Apps Script engines saving hundreds of operational hours and boosting CSAT by +10-20%.",
           tagline: "Leadership Metric: Managed 20+ QA auditors with 100% SLA compliance"
         };
       default:
         return {
-          badge: "Software Developer • Data Analyst • QA Operations Leader",
+          badge: "Web Developer • Data Analyst • QA Operations Leader",
           title: "Bridging Modern Web Engineering, Data Analytics & QA Leadership",
           description: "Full-stack frontend developer with 6+ years of industry experience leading BPO Quality Assurance teams, building automated data tools, and delivering high-impact web applications.",
-          tagline: "Meta Front-End & Google Data Analytics Certified Professional"
+          tagline: ""
         };
     }
   };
@@ -57,7 +57,7 @@ export default function Hero({ activeRole, setActiveRole, openResumeModal }) {
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white leading-[1.15]">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 dark:from-lime-300 dark:via-emerald-400 dark:to-teal-300">Rafael Lopez</span>
+            I'm <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-600 via-purple-600 to-indigo-800 dark:from-lime-300 dark:via-emerald-400 dark:to-teal-300">Rafael Lopez</span>
           </h1>
           
           <p className="mt-4 text-xl sm:text-2xl font-bold text-slate-700 dark:text-slate-300 max-w-3xl">
