@@ -5,6 +5,7 @@ import MetricsOverview from './components/MetricsOverview';
 import WebDevSection from './components/WebDevSection';
 import DataAnalystSection from './components/DataAnalystSection';
 import QAManagerSection from './components/QAManagerSection';
+import ExecutiveAssistantSection from './components/ExecutiveAssistantSection';
 import SkillsMatrix from './components/SkillsMatrix';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import ResumeModal from './components/ResumeModal';
@@ -60,6 +61,10 @@ export default function App() {
 
         {(activeRole === 'all' || activeRole === 'qa') && (
           <QAManagerSection />
+        )}
+
+        {(activeRole === 'all' || activeRole === 'ea') && (
+          <ExecutiveAssistantSection openResumeModal={() => setResumeModalOpen(true)} />
         )}
 
         {/* Common Core Sections */}

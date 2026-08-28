@@ -1,6 +1,6 @@
 import React from 'react';
 import { SKILL_CATEGORIES } from '../data/portfolioData';
-import { Code2, BarChart3, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Code2, BarChart3, ShieldCheck, Briefcase, CheckCircle2 } from 'lucide-react';
 
 export default function SkillsMatrix({ activeRole }) {
   const filteredCategories = activeRole === 'all'
@@ -12,6 +12,7 @@ export default function SkillsMatrix({ activeRole }) {
       case 'Code2': return Code2;
       case 'BarChart3': return BarChart3;
       case 'ShieldCheck': return ShieldCheck;
+      case 'Briefcase': return Briefcase;
       default: return Code2;
     }
   };
@@ -34,7 +35,7 @@ export default function SkillsMatrix({ activeRole }) {
         </div>
 
         {/* Category Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${filteredCategories.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-6`}>
           {filteredCategories.map((cat, idx) => {
             const Icon = getCategoryIcon(cat.icon);
             return (

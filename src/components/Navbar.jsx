@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sun, Moon, Download, Menu, X, Code2, BarChart3, ShieldCheck, Sparkles } from 'lucide-react';
+import { Sun, Moon, Download, Menu, X, Code2, BarChart3, ShieldCheck, Sparkles, Briefcase } from 'lucide-react';
 
 export default function Navbar({ activeRole, setActiveRole, darkMode, toggleDarkMode, openResumeModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,6 +9,7 @@ export default function Navbar({ activeRole, setActiveRole, darkMode, toggleDark
     { id: 'webdev', label: 'Web Dev', icon: Code2 },
     { id: 'data', label: 'Data Analyst', icon: BarChart3 },
     { id: 'qa', label: 'QA Manager', icon: ShieldCheck },
+    { id: 'ea', label: 'Exec Assistant', icon: Briefcase },
   ];
 
   return (

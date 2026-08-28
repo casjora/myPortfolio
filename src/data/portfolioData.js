@@ -14,8 +14,42 @@ export const PERSONAL_INFO = {
     { id: "all", label: "All Specializations", icon: "Sparkles", color: "from-indigo-500 to-purple-600" },
     { id: "webdev", label: "Frontend Web Developer", icon: "Code2", color: "from-indigo-600 to-blue-500" },
     { id: "data", label: "Data Analyst & KPI Specialist", icon: "BarChart3", color: "from-emerald-600 to-teal-500" },
-    { id: "qa", label: "QA Manager & BPO Automation", icon: "ShieldCheck", color: "from-amber-500 to-orange-600" }
+    { id: "qa", label: "QA Manager & BPO Automation", icon: "ShieldCheck", color: "from-amber-500 to-orange-600" },
+    { id: "ea", label: "Executive Assistant", icon: "Briefcase", color: "from-purple-600 to-pink-500" }
   ]
+};
+
+export const RESUME_LINKS = {
+  all: {
+    title: "All Specializations (Master Resume)",
+    viewUrl: "https://drive.google.com/file/d/1qN6-OebcjctP5T9oXFGDkGVH0YP75czp/view?usp=drive_link",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1qN6-OebcjctP5T9oXFGDkGVH0YP75czp",
+    driveId: "1qN6-OebcjctP5T9oXFGDkGVH0YP75czp"
+  },
+  webdev: {
+    title: "Web / Software Developer Resume",
+    viewUrl: "https://drive.google.com/file/d/1FlTsJGxYtBsaMMyGMN_oBXfknttJAsCM/view?usp=drive_link",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1FlTsJGxYtBsaMMyGMN_oBXfknttJAsCM",
+    driveId: "1FlTsJGxYtBsaMMyGMN_oBXfknttJAsCM"
+  },
+  data: {
+    title: "Data Analyst Resume",
+    viewUrl: "https://drive.google.com/file/d/1sSZT5GEv0yuiXb31b85WcqtZRoSGYlyU/view?usp=drive_link",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1sSZT5GEv0yuiXb31b85WcqtZRoSGYlyU",
+    driveId: "1sSZT5GEv0yuiXb31b85WcqtZRoSGYlyU"
+  },
+  qa: {
+    title: "QA Manager & BPO Automation Resume",
+    viewUrl: "https://drive.google.com/file/d/1WaMjhJmQNtb-VOqG367An_9qLAAwoY1U/view?usp=drive_link",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1WaMjhJmQNtb-VOqG367An_9qLAAwoY1U",
+    driveId: "1WaMjhJmQNtb-VOqG367An_9qLAAwoY1U"
+  },
+  ea: {
+    title: "Executive Assistant Resume",
+    viewUrl: "https://drive.google.com/file/d/1lRgsQ0lFwV9To8D7QOj7uZbWN_36Pgjz/view?usp=drive_link",
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1lRgsQ0lFwV9To8D7QOj7uZbWN_36Pgjz",
+    driveId: "1lRgsQ0lFwV9To8D7QOj7uZbWN_36Pgjz"
+  }
 };
 
 export const HIGHLIGHT_STATS = [
@@ -228,6 +262,19 @@ export const SKILL_CATEGORIES = [
       { name: "Root Cause Analysis (RCA)", level: 95, tag: "Strategy" },
       { name: "Process Optimization", level: 95, tag: "Workflow" },
       { name: "AI Validation Auditing", level: 88, tag: "AI Quality Control" }
+    ]
+  },
+  {
+    category: "ea",
+    title: "Executive Assistance & Administrative Support",
+    icon: "Briefcase",
+    skills: [
+      { name: "Executive Calendar & Inbox Management", level: 95, tag: "Administration" },
+      { name: "C1 Bilingual English/Spanish Communication", level: 98, tag: "Bilingual" },
+      { name: "Google Workspace & Office 365 Mastery", level: 96, tag: "Productivity" },
+      { name: "Process Automation & Workflow Efficiency", level: 94, tag: "Optimization" },
+      { name: "Data-Driven Executive Reporting & Minutes", level: 95, tag: "Operations" },
+      { name: "Stakeholder Coordination & Confidentiality", level: 96, tag: "Management" }
     ]
   }
 ];

@@ -26,6 +26,13 @@ export default function Hero({ activeRole, setActiveRole, openResumeModal }) {
           description: "Supervised 20+ members in QA teams across major contact centers. Built custom JavaScript & Google Apps Script engines saving hundreds of operational hours and boosting CSAT by +10-20%.",
           tagline: "Leadership Metric: Managed 20+ QA auditors with 100% SLA compliance"
         };
+      case 'ea':
+        return {
+          badge: "Executive Assistant & Operations Specialist",
+          title: "High-Efficiency Executive Support, Calendar Management & Process Automation",
+          description: "Bilingual (English C1 / Spanish Native) operations leader bringing 6+ years of QA team supervision, data-driven workflow optimization, Google Suite automation, and meticulous administrative coordination.",
+          tagline: "Core Strengths: C1 Bilingual Communication, Executive Inbox/Calendar Coordination & Automated Reporting"
+        };
       default:
         return {
           badge: "Web Developer • Data Analyst • QA Operations Leader",
