@@ -118,14 +118,14 @@ export default function Hero({ activeRole, setActiveRole, openResumeModal }) {
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
               <span>Bilingual (English C1 / Spanish Native)</span>
             </div>
-            <div className="flex items-center gap-2">
+{/*             <div className="flex items-center gap-2">
               <Award className="w-4 h-4 text-indigo-500 dark:text-lime-400" />
               <span>Meta Front-End Certified</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-4 h-4 text-teal-500" />
               <span>Google Data Analytics Certified</span>
-            </div>
+            </div> */}
           </div>
 
         </div>

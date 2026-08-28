@@ -41,7 +41,7 @@ export const HIGHLIGHT_STATS = [
     id: "tech",
     number: "100%",
     label: "Data Integrity & Code Quality",
-    description: "Meta & Google certified professional combining modern React with rigorous QA verification."
+    description: "Professional combining modern React with rigorous QA verification."
   }
 ];
 
@@ -123,7 +123,7 @@ export const DATA_CASE_STUDIES = [
     title: "BPO Operations & QA KPI Analytics Dashboard",
     client: "Interactive Contact Center & IntouchCX",
     impact: "Cut handling times by 41% & boosted CSAT by 10-20%",
-    description: "Designed Looker Studio dashboards and automated SQL/Google Sheets data pipelines for executive stakeholder reporting across 20+ QA team members.",
+    description: "Designed Looker Studio dashboards and automated Google Sheets data pipelines for executive stakeholder reporting across 20+ QA team members.",
     metrics: [
       { label: "Review Time", value: "35 mins", detail: "Down from 60+ mins baseline" },
       { label: "CSAT Improvement", value: "+10% - 20%", detail: "Via root cause action plans" },
@@ -208,11 +208,11 @@ export const SKILL_CATEGORIES = [
     title: "Data Analytics & KPI Dashboards",
     icon: "BarChart3",
     skills: [
-      { name: "SQL & Querying", level: 88, tag: "Database" },
+      { name: "SQL & Querying", level: 60, tag: "Database" },
       { name: "Looker Studio", level: 92, tag: "BI Dashboards" },
       { name: "Google Sheets / Excel", level: 95, tag: "Data Analysis" },
-      { name: "Python (Data Basics)", level: 80, tag: "Scripting" },
-      { name: "R Programming", level: 75, tag: "Statistical Data" },
+      { name: "Python (Data Basics)", level: 50, tag: "Scripting" },
+      { name: "R Programming", level: 35, tag: "Statistical Data" },
       { name: "Data Cleaning", level: 94, tag: "ETL / Integrity" },
       { name: "KPI & CSAT Tracking", level: 95, tag: "Metrics" }
     ]
@@ -222,10 +222,10 @@ export const SKILL_CATEGORIES = [
     title: "QA Operations & Process Automation",
     icon: "ShieldCheck",
     skills: [
-      { name: "Google Apps Script", level: 94, tag: "JS Automation" },
-      { name: "QA Team Supervision", level: 92, tag: "Leadership" },
+      { name: "Google Apps Script", level: 80, tag: "JS Automation" },
+      { name: "QA Team Supervision", level: 95, tag: "Leadership" },
       { name: "SLA / SOW Auditing", level: 96, tag: "Compliance" },
-      { name: "Root Cause Analysis (RCA)", level: 90, tag: "Strategy" },
+      { name: "Root Cause Analysis (RCA)", level: 95, tag: "Strategy" },
       { name: "Process Optimization", level: 95, tag: "Workflow" },
       { name: "AI Validation Auditing", level: 88, tag: "AI Quality Control" }
     ]
@@ -296,13 +296,13 @@ export const EDUCATION = [
   {
     institution: "Meta (Coursera)",
     degree: "Meta Front-End Development Professional Certificate",
-    period: "Expected Apr 2026",
+    period: "Expected Oct 2026",
     details: "Advanced React, JavaScript, HTML/CSS, UI design, Git version control"
   },
   {
     institution: "Google (Coursera)",
     degree: "Google Data Analytics Professional Certificate",
-    period: "Completed 2023",
+    period: "Expected 2026",
     details: "Data cleaning, SQL querying, R programming, data visualization, Tableau/Looker"
   }
 ];

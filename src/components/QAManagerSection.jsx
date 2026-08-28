@@ -106,7 +106,7 @@ function auditInteractionData(recordId, agentInput, docRules) {
                 </div>
 
                 <div className="px-4 py-2 bg-slate-900/80 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
-                  <span>Target: Interactive Contact Center</span>
+ {/*                  <span>Target: Interactive Contact Center</span> */}
                   <span className="text-emerald-400 font-bold">Status: Deployed & Active</span>
                 </div>
               </div>

@@ -25,7 +25,7 @@ export default function DataAnalystSection() {
             </h2>
           </div>
           <p className="mt-3 md:mt-0 text-sm text-slate-600 dark:text-slate-400 max-w-md">
-            Translating high-volume BPO operational logs into Looker Studio dashboards, automated SQL pipelines, and zero-error audit datasets.
+            Translating high-volume BPO operational logs into Looker Studio dashboards, and zero-error audit datasets.
           </p>
         </div>
 
